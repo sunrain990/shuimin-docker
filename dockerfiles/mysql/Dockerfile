@@ -1,4 +1,4 @@
-FROM centos:centos7
+FROM shuimin:centos7.31
 
 MAINTAINER The CentOS Project <cloud-ops@centos.org>
 LABEL Vendor="CentOS"
