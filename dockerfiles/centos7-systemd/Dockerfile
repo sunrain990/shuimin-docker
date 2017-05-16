@@ -22,7 +22,7 @@ RUN yum install -y curl wget tar bzip2 unzip vim-enhanced passwd sudo yum-utils 
 
 RUN yum -y update; yum clean all
 RUN yum -y install systemd; yum clean all;
-RUN (RUN cd /lib/systemd/system/sysinit.target.wants/; for i in *; do [ $i == systemd-tmpfiles-setup.service ] || RUN rm -f $i; done);
+RUN (cd /lib/systemd/system/sysinit.target.wants/; for i in *; do [ $i == systemd-tmpfiles-setup.service ] || rm -f $i; done);
 RUN rm -f /lib/systemd/system/multi-user.target.wants/*;
 RUN rm -f /etc/systemd/system/*.wants/*;
 RUN rm -f /lib/systemd/system/local-fs.target.wants/*;
