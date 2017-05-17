@@ -15,8 +15,9 @@ ADD aliyun-mirror.repo /etc/yum.repos.d/CentOS-Base.repo
 ADD aliyun-epel.repo /etc/yum.repos.d/epel.repo
 
 RUN yum -y update;
-RUN yum -y install systemd; yum clean all;
 
+# systemd
+RUN yum -y install systemd; yum clean all;
 RUN (cd /lib/systemd/system/sysinit.target.wants/; for i in *; do [ $i == systemd-tmpfiles-setup.service ] || rm -f $i; done); \
 rm -f /lib/systemd/system/multi-user.target.wants/*;\
 rm -f /etc/systemd/system/*.wants/*;\
@@ -26,7 +27,23 @@ rm -f /lib/systemd/system/sockets.target.wants/*initctl*; \
 rm -f /lib/systemd/system/basic.target.wants/*;\
 rm -f /lib/systemd/system/anaconda.target.wants/*;
 
+# sshd
+RUN yum -y install openssh-server passwd; yum clean all
+ADD ./ssh/start.sh /start.sh
+RUN mkdir /var/run/sshd
 
-EXPOSE 22
+RUN ssh-keygen -t rsa -f /etc/ssh/ssh_host_rsa_key -N ''
+
+RUN chmod 755 /start.sh
+# EXPOSE 22
+RUN ./start.sh
+RUN systemctl enable sshd;
+
+# nginx
+RUN yum -y install nginx;
+RUN systemctl enable nginx;
+EXPOSE 80
+
+
 VOLUME [ "/sys/fs/cgroup" ]
 CMD ["/usr/sbin/init"]
