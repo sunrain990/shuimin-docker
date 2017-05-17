@@ -14,9 +14,6 @@ ENV container docker
 ADD aliyun-mirror.repo /etc/yum.repos.d/CentOS-Base.repo
 ADD aliyun-epel.repo /etc/yum.repos.d/epel.repo
 
-
-
-
 RUN yum -y update;
 RUN yum -y install systemd; yum clean all;
 
@@ -29,7 +26,7 @@ rm -f /lib/systemd/system/sockets.target.wants/*initctl*; \
 rm -f /lib/systemd/system/basic.target.wants/*;\
 rm -f /lib/systemd/system/anaconda.target.wants/*;
 
-VOLUME [ "/sys/fs/cgroup" ]
-CMD ["/usr/sbin/init"]
 
 EXPOSE 22
+VOLUME [ "/sys/fs/cgroup" ]
+CMD ["/usr/sbin/init"]
