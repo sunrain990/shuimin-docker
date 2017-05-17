@@ -4,7 +4,7 @@
 #
 # Dockerizing CentOS7: Dockerfile for building CentOS images
 #
-FROM       shuimin/centos:centos7.3
+FROM       shuimin/centos:7.3
 MAINTAINER Kevin,S.Q.B <409747494@qq.com>
 
 RUN yum -y install nginx;
