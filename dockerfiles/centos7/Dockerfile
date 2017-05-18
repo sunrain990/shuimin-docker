@@ -17,8 +17,8 @@ ADD aliyun-epel.repo /etc/yum.repos.d/epel.repo
 RUN yum -y update;
 
 # systemd
-RUN yum -y install systemd; yum clean all;
-RUN (cd /lib/systemd/system/sysinit.target.wants/; for i in *; do [ $i == systemd-tmpfiles-setup.service ] || rm -f $i; done); \
+RUN yum -y install systemd; yum clean all;\
+(cd /lib/systemd/system/sysinit.target.wants/; for i in *; do [ $i == systemd-tmpfiles-setup.service ] || rm -f $i; done); \
 rm -f /lib/systemd/system/multi-user.target.wants/*;\
 rm -f /etc/systemd/system/*.wants/*;\
 rm -f /lib/systemd/system/local-fs.target.wants/*; \
@@ -36,13 +36,23 @@ RUN ssh-keygen -t rsa -f /etc/ssh/ssh_host_rsa_key -N ''
 
 RUN chmod 755 /start.sh
 # EXPOSE 22
-RUN ./start.sh
+RUN ./ssh/start.sh
 RUN systemctl enable sshd;
 
 # nginx
 RUN yum -y install nginx;
 RUN systemctl enable nginx;
 EXPOSE 80
+
+# mysql
+RUN yum -y install --setopt=tsflags=nodocs epel-release && \
+    yum -y install --setopt=tsflags=nodocs mariadb-server bind-utils pwgen psmisc hostname && \
+    yum -y erase vim-minimal;
+
+COPY ./mariadb/fix-permissions.sh ./
+RUN ./mariadb/fix-permissions.sh /var/lib/mysql/   && \
+   ./mariadb/fix-permissions.sh /var/log/mariadb/ && \
+   ./mariadb/fix-permissions.sh /var/run/
 
 
 VOLUME [ "/sys/fs/cgroup" ]
