@@ -49,7 +49,7 @@ RUN yum -y install --setopt=tsflags=nodocs epel-release && \
     yum -y install --setopt=tsflags=nodocs mariadb-server bind-utils pwgen psmisc hostname && \
     yum -y erase vim-minimal;
 
-COPY ./fix-permissions.sh ./
+COPY ./mariadb/fix-permissions.sh ./
 RUN ./fix-permissions.sh /var/lib/mysql/   && \
    ./fix-permissions.sh /var/log/mariadb/ && \
    ./fix-permissions.sh /var/run/
