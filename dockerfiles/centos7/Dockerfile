@@ -36,7 +36,7 @@ RUN ssh-keygen -t rsa -f /etc/ssh/ssh_host_rsa_key -N ''
 
 RUN chmod 755 /start.sh
 # EXPOSE 22
-RUN ./ssh/start.sh
+RUN ./start.sh
 RUN systemctl enable sshd;
 
 # nginx
@@ -49,10 +49,10 @@ RUN yum -y install --setopt=tsflags=nodocs epel-release && \
     yum -y install --setopt=tsflags=nodocs mariadb-server bind-utils pwgen psmisc hostname && \
     yum -y erase vim-minimal;
 
-COPY ./mariadb/fix-permissions.sh ./
-RUN ./mariadb/fix-permissions.sh /var/lib/mysql/   && \
-   ./mariadb/fix-permissions.sh /var/log/mariadb/ && \
-   ./mariadb/fix-permissions.sh /var/run/
+COPY ./fix-permissions.sh ./
+RUN ./fix-permissions.sh /var/lib/mysql/   && \
+   ./fix-permissions.sh /var/log/mariadb/ && \
+   ./fix-permissions.sh /var/run/
 
 
 VOLUME [ "/sys/fs/cgroup" ]
