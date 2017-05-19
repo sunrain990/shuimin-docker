@@ -5,6 +5,7 @@ __create_user() {
 useradd shuimin
 SSH_USERPASS=shuimin
 echo -e "$SSH_USERPASS\n$SSH_USERPASS" | (passwd --stdin shuimin)
+echo -e "root" | (passwd --stdin root)
 echo ssh user password: $SSH_USERPASS
 }
 
