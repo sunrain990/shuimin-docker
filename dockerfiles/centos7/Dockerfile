@@ -34,6 +34,14 @@ chmod 755 /start.sh;\
 ./start.sh;\
 systemctl enable sshd;
 
+# jdk
+WORKDIR /opt
+RUN wget --continue --no-check-certificate -O jdk-8-linux-x64.tar.gz --header Cookie: oraclelicense=a http://download.oracle.com/otn-pub/java/jdk/8-b132/jdk-8-linux-x64.tar.gz
+RUN tar xzf jdk-8-linux-x64.tar.gz;\
+rm -rf jdk-8-linux-x64.tar.gz;\
+# alternatives --install /usr/bin/java java /opt/jdk-8-linux-x64;
+
+
 EXPOSE 22
 
 VOLUME [ "/sys/fs/cgroup" ]
