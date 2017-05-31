@@ -35,12 +35,7 @@ chmod 755 /start.sh;\
 systemctl enable sshd;
 
 # jdk
-WORKDIR /opt
-
-RUN wget --no-check-certificate -c -O jdk-8u121-linux-x64.tar.gz --header "Cookie: oraclelicense=accept-securebackup-cookie" http://download.oracle.com/otn-pub/java/jdk/8u121-b13/jdk-8u121-linux-x64.tar.gz
-RUN tar xzf jdk-8u121-linux-x64.tar.gz;\
-rm -rf jdk-8u121-linux-x64.tar.gz;\
-alternatives --install /usr/bin/java java /opt/jdk-8u121-linux-x64;
+RUN wget -q http://www.oracle.com/technetwork/java/javase/downloads/index.html -O ./index.html &&  cat index.html| grep -Eoi '/technetwork/java/javase/downloads/jdk8-downloads-[0-9]+.html'| (head -n 1) | awk '{print "http://www.oracle.com"$1}'| xargs wget --no-cookies --header "Cookie: gpw_e24=xxx; oraclelicense=accept-securebackup-cookie;" -O index.html -q&& grep -Eoi '"filepath":"[^"]+jdk-8u[0-9]+-linux-x64.rpm"' index.html |grep -Eoi 'http:[^"]+'|xargs wget --no-cookies --header "Cookie: gpw_e24=xxx; oraclelicense=accept-securebackup-cookie;" -O ./jdk8.rpm && sudo rpm -i ./jdk8.rpm;\
 
 EXPOSE 22
 
