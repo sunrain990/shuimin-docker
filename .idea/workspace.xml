@@ -59,8 +59,8 @@
       <file leaf-file-name="Dockerfile" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dockerfiles/centos7/Dockerfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="39" column="36" selection-start-line="39" selection-start-column="36" selection-end-line="39" selection-end-column="36" />
+            <state relative-caret-position="245">
+              <caret line="46" column="27" selection-start-line="46" selection-start-column="27" selection-end-line="46" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -150,8 +150,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="303" />
-    <option name="y" value="541" />
+    <option name="x" value="277" />
+    <option name="y" value="179" />
     <option name="width" value="1306" />
     <option name="height" value="664" />
   </component>
@@ -329,15 +329,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1494522623604</updated>
-      <workItem from="1494522625451" duration="64786000" />
+      <workItem from="1494522625451" duration="65339000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64786000" />
+    <option name="totallyTimeSpent" value="65339000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="303" y="541" width="1306" height="664" extended-state="0" />
+    <frame x="277" y="179" width="1306" height="664" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13540857" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -608,8 +608,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dockerfiles/centos7/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="39" column="36" selection-start-line="39" selection-start-column="36" selection-end-line="39" selection-end-column="36" />
+        <state relative-caret-position="245">
+          <caret line="46" column="27" selection-start-line="46" selection-start-column="27" selection-end-line="46" selection-end-column="27" />
           <folding />
         </state>
       </provider>
