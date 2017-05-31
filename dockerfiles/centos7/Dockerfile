@@ -37,7 +37,7 @@ systemctl enable sshd;
 # jdk
 WORKDIR /opt
 
-RUN wget --no-check-certificate -c --header -O jdk-8u121-linux-x64.tar.gz "Cookie: oraclelicense=accept-securebackup-cookie" http://download.oracle.com/otn-pub/java/jdk/8u121-b13/e9e7ea248e2c4826b92b3f075a80e441/jdk-8u121-linux-x64.tar.gz
+RUN wget --no-check-certificate -c -O jdk-8u121-linux-x64.tar.gz --header "Cookie: oraclelicense=accept-securebackup-cookie" http://download.oracle.com/otn-pub/java/jdk/8u121-b13/e9e7ea248e2c4826b92b3f075a80e441/jdk-8u121-linux-x64.tar.gz
 RUN tar xzf jdk-8u121-linux-x64.tar.gz;\
 rm -rf jdk-8u121-linux-x64.tar.gz;\
 alternatives --install /usr/bin/java java /opt/jdk-8u121-linux-x64;
