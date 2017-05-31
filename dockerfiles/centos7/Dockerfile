@@ -26,7 +26,7 @@ rm -f /lib/systemd/system/basic.target.wants/*;\
 rm -f /lib/systemd/system/anaconda.target.wants/*;
 
 # sshd
-RUN yum -y install openssh-server passwd; yum clean all
+RUN yum -y install openssh-server passwd; yum clean all; yum -y install wget tar
 ADD ./ssh/start.sh /start.sh
 RUN mkdir /var/run/sshd;\
 ssh-keygen -t rsa -f /etc/ssh/ssh_host_rsa_key -N '';\
