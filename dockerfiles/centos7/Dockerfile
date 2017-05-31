@@ -41,7 +41,6 @@ RUN tar xzf jdk-8-linux-x64.tar.gz;\
 rm -rf jdk-8-linux-x64.tar.gz;\
 # alternatives --install /usr/bin/java java /opt/jdk-8-linux-x64;
 
-
 EXPOSE 22
 
 VOLUME [ "/sys/fs/cgroup" ]
