@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="59af5fd1-c15d-4fb8-8606-d1a22a11adca" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dockerfiles/centos7/Dockerfile" afterPath="$PROJECT_DIR$/dockerfiles/centos7/Dockerfile" />
     </list>
     <ignored path="shuimin-docker.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,11 +25,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Dockerfile" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Dockerfile" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dockerfiles/centos7/Dockerfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="42" column="42" selection-start-line="42" selection-start-column="42" selection-end-line="42" selection-end-column="42" />
+            <state relative-caret-position="198">
+              <caret line="42" column="32" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BuildCentOS.sh" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/dockerfiles/centos7/BuildCentOS.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -70,8 +79,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="625" />
-    <option name="y" value="220" />
+    <option name="x" value="686" />
+    <option name="y" value="107" />
     <option name="width" value="1130" />
     <option name="height" value="654" />
   </component>
@@ -249,15 +258,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1494522623604</updated>
-      <workItem from="1494522625451" duration="72514000" />
+      <workItem from="1494522625451" duration="73219000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72514000" />
+    <option name="totallyTimeSpent" value="73219000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="625" y="220" width="1130" height="654" extended-state="0" />
+    <frame x="686" y="107" width="1130" height="654" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14697926" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -526,18 +535,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dockerfiles/centos7/BuildCentOS.sh">
+    <entry file="file://$PROJECT_DIR$/dockerfiles/centos7/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
+        <state relative-caret-position="198">
+          <caret line="42" column="32" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dockerfiles/centos7/Dockerfile">
+    <entry file="file://$PROJECT_DIR$/dockerfiles/centos7/BuildCentOS.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="42" column="42" selection-start-line="42" selection-start-column="42" selection-end-line="42" selection-end-column="42" />
+        <state relative-caret-position="270">
+          <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
           <folding />
         </state>
       </provider>
