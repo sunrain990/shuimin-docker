@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+set -e
 docker build -t shuimin/centos:7.3 .
 docker run -ti --privileged=true -d -p 2222:22 shuimin/centos:7.3
 

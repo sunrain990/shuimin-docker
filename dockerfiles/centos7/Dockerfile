@@ -37,10 +37,10 @@ systemctl enable sshd;
 # jdk
 RUN wget http://www.oracle.com/technetwork/java/javase/downloads/index.html -O ./index.html &&  cat index.html| grep -Eoi '/technetwork/java/javase/downloads/jdk8-downloads-[0-9]+.html'| (head -n 1) | awk '{print "http://www.oracle.com"$1}'| xargs wget --no-cookies --header "Cookie: gpw_e24=xxx; oraclelicense=accept-securebackup-cookie;" -O index.html -q&& grep -Eoi '"filepath":"[^"]+jdk-8u[0-9]+-linux-x64.rpm"' index.html |grep -Eoi 'http:[^"]+'|xargs wget --no-cookies --header "Cookie: gpw_e24=xxx; oraclelicense=accept-securebackup-cookie;" -O ./jdk8.rpm && rpm -i ./jdk8.rpm;
 
-RUN wget http://www.eu.apache.org/dist/maven/maven-3/3.3.9/binaries/apache-maven-3.3.9-bin.tar.gz\
-tar xzf apache-maven-3.3.9-bin.tar.gz\
-mkdir /usr/local/maven\
-mv apache-maven-3.3.9/ /usr/local/maven/ \
+RUN wget http://www.eu.apache.org/dist/maven/maven-3/3.3.9/binaries/apache-maven-3.3.9-bin.tar.gz;\
+tar xzf apache-maven-3.3.9-bin.tar.gz;\
+mkdir /usr/local/maven;\
+mv apache-maven-3.3.9/ /usr/local/maven/ ;\
 alternatives --install /usr/bin/mvn mvn /usr/local/maven/apache-maven-3.3.9/bin/mvn 1;
 
 EXPOSE 22
