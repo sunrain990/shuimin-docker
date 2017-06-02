@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="59af5fd1-c15d-4fb8-8606-d1a22a11adca" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dockerfiles/centos7/BuildCentOS.sh" afterPath="$PROJECT_DIR$/dockerfiles/centos7/BuildCentOS.sh" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dockerfiles/centos7/Dockerfile" afterPath="$PROJECT_DIR$/dockerfiles/centos7/Dockerfile" />
     </list>
     <ignored path="shuimin-docker.iws" />
@@ -30,8 +29,8 @@
       <file leaf-file-name="Dockerfile" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dockerfiles/centos7/Dockerfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="39" column="38" selection-start-line="39" selection-start-column="38" selection-end-line="39" selection-end-column="38" />
+            <state relative-caret-position="228">
+              <caret line="45" column="36" selection-start-line="45" selection-start-column="36" selection-end-line="45" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -69,8 +68,8 @@
         <option value="$PROJECT_DIR$/dockerfiles/centos7/InitOS.sh" />
         <option value="$PROJECT_DIR$/dockerfiles/centos7/volume_restore.sh" />
         <option value="$PROJECT_DIR$/dockerfiles/centos7/volume_backup.sh" />
-        <option value="$PROJECT_DIR$/dockerfiles/centos7/Dockerfile" />
         <option value="$PROJECT_DIR$/dockerfiles/centos7/BuildCentOS.sh" />
+        <option value="$PROJECT_DIR$/dockerfiles/centos7/Dockerfile" />
       </list>
     </option>
   </component>
@@ -81,8 +80,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="590" />
-    <option name="y" value="331" />
+    <option name="x" value="532" />
+    <option name="y" value="405" />
     <option name="width" value="1130" />
     <option name="height" value="654" />
   </component>
@@ -260,15 +259,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1494522623604</updated>
-      <workItem from="1494522625451" duration="73836000" />
+      <workItem from="1494522625451" duration="76478000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73836000" />
+    <option name="totallyTimeSpent" value="76478000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="590" y="331" width="1130" height="654" extended-state="0" />
+    <frame x="532" y="405" width="1130" height="654" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14697926" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -547,8 +546,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dockerfiles/centos7/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="39" column="38" selection-start-line="39" selection-start-column="38" selection-end-line="39" selection-end-column="38" />
+        <state relative-caret-position="228">
+          <caret line="45" column="36" selection-start-line="45" selection-start-column="36" selection-end-line="45" selection-end-column="36" />
           <folding />
         </state>
       </provider>
