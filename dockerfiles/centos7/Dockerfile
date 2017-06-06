@@ -25,8 +25,8 @@ rm -f /lib/systemd/system/sockets.target.wants/*initctl*; \
 rm -f /lib/systemd/system/basic.target.wants/*;\
 rm -f /lib/systemd/system/anaconda.target.wants/*;
 
-# sshd
-RUN yum -y install openssh-server passwd; yum clean all; yum -y install wget tar
+# sshd && tools
+RUN yum -y install openssh-server passwd; yum clean all; yum -y install wget tar git
 ADD ./ssh/start.sh /start.sh
 RUN mkdir /var/run/sshd;\
 ssh-keygen -t rsa -f /etc/ssh/ssh_host_rsa_key -N '';\
@@ -37,18 +37,19 @@ systemctl enable sshd;
 # jdk
 RUN wget http://www.oracle.com/technetwork/java/javase/downloads/index.html -O ./index.html &&  cat index.html| grep -Eoi '/technetwork/java/javase/downloads/jdk8-downloads-[0-9]+.html'| (head -n 1) | awk '{print "http://www.oracle.com"$1}'| xargs wget --no-cookies --header "Cookie: gpw_e24=xxx; oraclelicense=accept-securebackup-cookie;" -O index.html -q&& grep -Eoi '"filepath":"[^"]+jdk-8u[0-9]+-linux-x64.rpm"' index.html |grep -Eoi 'http:[^"]+'|xargs wget --no-cookies --header "Cookie: gpw_e24=xxx; oraclelicense=accept-securebackup-cookie;" -O ./jdk8.rpm && rpm -i ./jdk8.rpm;
 
+# maven
 RUN wget http://www.eu.apache.org/dist/maven/maven-3/3.3.9/binaries/apache-maven-3.3.9-bin.tar.gz;\
 tar xzf apache-maven-3.3.9-bin.tar.gz;\
 mkdir /usr/local/maven;\
 mv apache-maven-3.3.9/ /usr/local/maven/ ;\
-alternatives --install /usr/bin/mvn mvn /usr/local/maven/apache-maven-3.3.9/bin/mvn 1;\
-echo 'export JAVA_HOME='$(find /usr/java/ -maxdepth 1 -name "jdk*" -type d) >> /etc/profile;\
-echo 'export CLASSPATH=.:$JAVA_HOME/jre/lib/rt.jar:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar'>> /etc/profile;\
-echo 'export PATH=$PATH:$JAVA_HOME/bin'>> /etc/profile;\
-source /etc/profile;
-#ENV JAVA_HOME $(find /usr/java/ -maxdepth 1 -name "jdk*" -type d)
-#ENV PATH $PATH:$JAVA_HOME
-
+alternatives --install /usr/bin/mvn mvn /usr/local/maven/apache-maven-3.3.9/bin/mvn 1;
+#echo 'export JAVA_HOME='$(find /usr/java/ -maxdepth 1 -name "jdk*" -type d) >> /etc/profile;\
+#echo 'export CLASSPATH=.:$JAVA_HOME/jre/lib/rt.jar:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar'>> /etc/profile;\
+#echo 'export PATH=$PATH:$JAVA_HOME/bin'>> /etc/profile;\
+#source /etc/profile;
+ENV JAVA_HOME=$(find /usr/java/ -maxdepth 1 -name "jdk*" -type d)
+ENV MAVEN_HOME=/usr/local/maven/apache-maven-3.3.9
+ENV PATH=$JAVA_HOME/bin:$MAVEN_HOME/bin:$PATH
 
 EXPOSE 22
 
