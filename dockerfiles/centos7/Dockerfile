@@ -48,7 +48,7 @@ alternatives --install /usr/bin/mvn mvn /usr/local/maven/apache-maven-3.3.9/bin/
 #echo 'export PATH=$PATH:$JAVA_HOME/bin'>> /etc/profile;\
 #source /etc/profile;
 RUN WHERE_JDK=$(find /usr/java/ -maxdepth 1 -name "jdk*" -type d);\
-echo $WHERE_JDK;
+RUN echo ${WHERE_JDK}
 ENV JAVA_HOME $WHERE_JDK
 ENV MAVEN_HOME /usr/local/maven/apache-maven-3.3.9
 ENV PATH $JAVA_HOME/bin:$MAVEN_HOME/bin:$PATH
