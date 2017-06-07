@@ -10,7 +10,7 @@ RUN touch /root/.ssh/known_hosts
 #RUN ssh-keyscan oschina.net >> /root/.ssh/known_hosts \
 #&& git clone git@oschina.net:skygufei/shuimin-wms.git /workspace/shuimin-wms;\
 
-RUN git clone git@git.oschina.net:kevinsqb/docker-test.git /workspace/shuimin-wms;\
+#RUN git clone git@git.oschina.net:kevinsqb/docker-test.git /workspace/shuimin-wms;\
 
 WORKDIR /workspace/shuimin-wms
 
