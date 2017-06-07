@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="59af5fd1-c15d-4fb8-8606-d1a22a11adca" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dockerfiles/project/pond/Dockerfile" afterPath="$PROJECT_DIR$/dockerfiles/project/pond/Dockerfile" />
     </list>
     <ignored path="shuimin-docker.iws" />
@@ -40,7 +39,7 @@
         <entry file="file://$PROJECT_DIR$/dockerfiles/project/pond/Dockerfile">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="150">
-              <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
+              <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -112,8 +111,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="757" />
-    <option name="y" value="98" />
+    <option name="x" value="824" />
+    <option name="y" value="190" />
     <option name="width" value="1281" />
     <option name="height" value="817" />
   </component>
@@ -358,15 +357,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1494522623604</updated>
-      <workItem from="1494522625451" duration="97535000" />
+      <workItem from="1494522625451" duration="98353000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="97535000" />
+    <option name="totallyTimeSpent" value="98353000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="757" y="98" width="1281" height="817" extended-state="0" />
+    <frame x="824" y="190" width="1281" height="817" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12936509" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -662,7 +661,7 @@
     <entry file="file://$PROJECT_DIR$/dockerfiles/project/pond/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
-          <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
+          <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
           <folding />
         </state>
       </provider>
