@@ -14,6 +14,6 @@ RUN touch /root/.ssh/known_hosts
 
 WORKDIR /workspace/shuimin-wms
 
-CMD ["/bin/bash, "-c","hello"]
+CMD ["/usr/sbin/init"]
 
 
