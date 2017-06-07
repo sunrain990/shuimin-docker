@@ -8,4 +8,4 @@ WORKDIR /workspace/pond
 
 RUN ["mvn", "install"]
 
-ENTRYPOINT["/bin/echo, "Hello"]
+CMD["/bin/echo, "Hello"]
