@@ -1,6 +1,6 @@
 FROM shuimin/pond:v0.1
 
-RUN mkdir /root/.ssh/ \
+RUN mkdir /root/.ssh/
 
 #ADD ./id_rsa /root/.ssh/id_rsa && chmod 600 /root/.ssh/id_rsa;
 
