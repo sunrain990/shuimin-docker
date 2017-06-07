@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="59af5fd1-c15d-4fb8-8606-d1a22a11adca" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dockerfiles/project/wms/id_rsa" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dockerfiles/project/wms/Dockerfile" afterPath="$PROJECT_DIR$/dockerfiles/project/wms/Dockerfile" />
     </list>
@@ -49,8 +50,8 @@
       <file leaf-file-name="Dockerfile" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dockerfiles/project/wms/Dockerfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
+            <state relative-caret-position="255">
+              <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -112,8 +113,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="525" />
-    <option name="y" value="306" />
+    <option name="x" value="505" />
+    <option name="y" value="150" />
     <option name="width" value="1281" />
     <option name="height" value="817" />
   </component>
@@ -273,6 +274,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/dockerfiles/project/wms" />
       <recent name="$PROJECT_DIR$/dockerfiles" />
       <recent name="$PROJECT_DIR$/dockerfiles/centos7" />
       <recent name="$PROJECT_DIR$/dockerfiles/centos7-systemd" />
@@ -358,15 +360,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1494522623604</updated>
-      <workItem from="1494522625451" duration="101283000" />
+      <workItem from="1494522625451" duration="103049000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101283000" />
+    <option name="totallyTimeSpent" value="103049000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="525" y="306" width="1281" height="817" extended-state="0" />
+    <frame x="505" y="150" width="1281" height="817" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12936509" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -669,8 +671,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dockerfiles/project/wms/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
+        <state relative-caret-position="255">
+          <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
           <folding />
         </state>
       </provider>
