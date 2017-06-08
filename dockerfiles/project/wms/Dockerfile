@@ -2,8 +2,8 @@ FROM shuimin/pond:0.0.1
 
 RUN mkdir /root/.ssh/
 
-ADD ./id_rsa /root/.ssh/id_rsa\
-&& chmod 600 /root/.ssh/id_rsa\
+ADD ./id_rsa /root/.ssh/id_rsa
+RUN chmod 600 /root/.ssh/id_rsa\
 && git clone git@git.oschina.net:kevinsqb/docker-test.git /workspace/docker-test
 
 # Create known_hosts
