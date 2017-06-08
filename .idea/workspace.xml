@@ -59,8 +59,8 @@
       <file leaf-file-name="Dockerfile" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dockerfiles/project/wms/Dockerfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="30" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
+            <state relative-caret-position="75">
+              <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -132,8 +132,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="624" />
-    <option name="y" value="169" />
+    <option name="x" value="646" />
+    <option name="y" value="139" />
     <option name="width" value="1281" />
     <option name="height" value="817" />
   </component>
@@ -364,15 +364,15 @@
       <option name="presentableId" value="Default" />
       <updated>1494522623604</updated>
       <workItem from="1494522625451" duration="106464000" />
-      <workItem from="1496826410711" duration="10831000" />
+      <workItem from="1496826410711" duration="11566000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="117295000" />
+    <option name="totallyTimeSpent" value="118030000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="624" y="169" width="1281" height="817" extended-state="0" />
+    <frame x="646" y="139" width="1281" height="817" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12936509" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -712,8 +712,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dockerfiles/project/wms/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="30" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
+        <state relative-caret-position="75">
+          <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
           <folding />
         </state>
       </provider>
