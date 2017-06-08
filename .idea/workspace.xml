@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="59af5fd1-c15d-4fb8-8606-d1a22a11adca" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dockerfiles/project/wms/Dockerfile" afterPath="$PROJECT_DIR$/dockerfiles/project/wms/Dockerfile" />
     </list>
     <ignored path="shuimin-docker.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -58,8 +58,8 @@
       <file leaf-file-name="Dockerfile" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dockerfiles/project/wms/Dockerfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+            <state relative-caret-position="270">
+              <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -119,8 +119,8 @@
         <option value="$PROJECT_DIR$/dockerfiles/centos7/volume_backup.sh" />
         <option value="$PROJECT_DIR$/dockerfiles/centos7/BuildCentOS.sh" />
         <option value="$PROJECT_DIR$/dockerfiles/centos7/Dockerfile" />
-        <option value="$PROJECT_DIR$/dockerfiles/project/wms/Dockerfile" />
         <option value="$PROJECT_DIR$/dockerfiles/project/pond/Dockerfile" />
+        <option value="$PROJECT_DIR$/dockerfiles/project/wms/Dockerfile" />
       </list>
     </option>
   </component>
@@ -131,8 +131,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="648" />
-    <option name="y" value="236" />
+    <option name="x" value="396" />
+    <option name="y" value="256" />
     <option name="width" value="1281" />
     <option name="height" value="817" />
   </component>
@@ -345,15 +345,15 @@
       <option name="presentableId" value="Default" />
       <updated>1494522623604</updated>
       <workItem from="1494522625451" duration="106464000" />
-      <workItem from="1496826410711" duration="7111000" />
+      <workItem from="1496826410711" duration="8295000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="113575000" />
+    <option name="totallyTimeSpent" value="114759000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="648" y="236" width="1281" height="817" extended-state="0" />
+    <frame x="396" y="256" width="1281" height="817" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12936509" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -675,14 +675,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dockerfiles/project/pond/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dockerfiles/project/wms/id_rsa">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -691,10 +683,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dockerfiles/project/wms/Dockerfile">
+    <entry file="file://$PROJECT_DIR$/dockerfiles/project/pond/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dockerfiles/project/wms/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
           <folding />
         </state>
       </provider>
