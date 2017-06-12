@@ -11,3 +11,10 @@ sudo tee /etc/docker/daemon.json <<-'EOF'
 EOF
 sudo systemctl daemon-reload
 sudo systemctl start docker
+
+
+#mkdir /opt/workspace
+#yum install git -y
+#git clone https://github.com/sunrain990/shuimin-docker
+#cd shuimin-docker/dockerfiles/centos7
+#
