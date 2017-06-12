@@ -6,7 +6,7 @@ ADD ./id_rsa /root/.ssh/id_rsa
 RUN chmod 600 /root/.ssh/id_rsa\
 && ssh-keyscan git.oschina.net >> /root/.ssh/known_hosts \
 && cd /workspace \
-&& git clone git@git.oschina.net:kevinsqb/docker-test.git
+&& git clone git@git.oschina.net:shuimin/shuimin-wms.git
 #chmod 600 /root/.ssh/id_rsa\
 #&& git clone git@git.oschina.net:kevinsqb/docker-test.git /workspace/docker-test
 
@@ -21,10 +21,12 @@ RUN chmod 600 /root/.ssh/id_rsa\
 
 #RUN git clone git@git.oschina.net:kevinsqb/docker-test.git /workspace/shuimin-wms;\
 
-WORKDIR /workspace/docker-test
+WORKDIR /workspace/shuimin-wms
 
 
+EXPOSE 5584
+CMD ["/bin/bash", "dev.sh"]
 
-CMD ["/usr/sbin/init"]
+#CMD ["/usr/sbin/init"]
 
 
