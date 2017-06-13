@@ -3,15 +3,15 @@ FROM shuimin/pond:0.0.1
 RUN mkdir /root/.ssh/
 
 ADD ./id_rsa /root/.ssh/id_rsa
-ADD ./cp.conf /opt/workspace/shuimin-wms/src/main/resources/cp.conf
-ADD ./dev.sh /opt/workspace/shuimin-wms/dev.sh
-ADD ./wms.sql /opt/workspace/shuimin-wms/wms.sql
-
 
 RUN chmod 600 /root/.ssh/id_rsa\
 && ssh-keyscan git.oschina.net >> /root/.ssh/known_hosts \
 && cd /opt/workspace \
 && git clone git@git.oschina.net:shuimin/shuimin-wms.git
+
+ADD ./dev.sh /opt/workspace/shuimin-wms/dev.sh
+ADD ./wms.sql /opt/workspace/shuimin-wms/wms.sql
+ADD ./cp.conf /opt/workspace/shuimin-wms/src/main/resources/cp.conf
 
 RUN mysql -h106.14.2.202 -uroot -proot --execute="CREATE DATABASE if not exists shuimin_wms;use shuimin_wms;"
 
