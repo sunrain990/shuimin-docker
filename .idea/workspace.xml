@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="59af5fd1-c15d-4fb8-8606-d1a22a11adca" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dockerfiles/centos7/mariadb/Dockerfile" afterPath="$PROJECT_DIR$/dockerfiles/centos7/mariadb/Dockerfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dockerfiles/centos7/BuildCentOS.sh" afterPath="$PROJECT_DIR$/dockerfiles/centos7/BuildCentOS.sh" />
     </list>
     <ignored path="shuimin-docker.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -86,11 +86,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Dockerfile" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Dockerfile" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dockerfiles/centos7/mariadb/Dockerfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="123">
-              <caret line="10" column="51" selection-start-line="10" selection-start-column="51" selection-end-line="10" selection-end-column="51" />
+            <state relative-caret-position="198">
+              <caret line="15" column="51" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="51" />
               <folding />
             </state>
           </provider>
@@ -116,11 +116,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BuildCentOS.sh" pinned="false" current-in-tab="false">
+      <file leaf-file-name="BuildCentOS.sh" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dockerfiles/centos7/BuildCentOS.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="102" selection-start-line="12" selection-start-column="98" selection-end-line="12" selection-end-column="102" />
+            <state relative-caret-position="393">
+              <caret line="29" column="35" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -146,7 +146,6 @@
         <option value="$PROJECT_DIR$/dockerfiles/centos7/ssh/start.sh" />
         <option value="$PROJECT_DIR$/dockerfiles/centos7/volume_restore.sh" />
         <option value="$PROJECT_DIR$/dockerfiles/centos7/volume_backup.sh" />
-        <option value="$PROJECT_DIR$/dockerfiles/centos7/BuildCentOS.sh" />
         <option value="$PROJECT_DIR$/dockerfiles/centos7/Dockerfile" />
         <option value="$PROJECT_DIR$/dockerfiles/project/pond/Dockerfile" />
         <option value="$PROJECT_DIR$/dockerfiles/centos7/InitOS.sh" />
@@ -154,6 +153,7 @@
         <option value="$PROJECT_DIR$/dockerfiles/project/wms/cp.conf" />
         <option value="$PROJECT_DIR$/dockerfiles/project/wms/Dockerfile" />
         <option value="$PROJECT_DIR$/dockerfiles/centos7/mariadb/Dockerfile" />
+        <option value="$PROJECT_DIR$/dockerfiles/centos7/BuildCentOS.sh" />
       </list>
     </option>
   </component>
@@ -418,12 +418,12 @@
       <option name="presentableId" value="Default" />
       <updated>1494522623604</updated>
       <workItem from="1494522625451" duration="106464000" />
-      <workItem from="1496826410711" duration="33838000" />
+      <workItem from="1496826410711" duration="34046000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="140302000" />
+    <option name="totallyTimeSpent" value="140510000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="418" y="105" width="1298" height="741" extended-state="0" />
@@ -743,14 +743,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dockerfiles/centos7/BuildCentOS.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="102" selection-start-line="12" selection-start-column="98" selection-end-line="12" selection-end-column="102" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dockerfiles/project/wms/dev.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -801,8 +793,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dockerfiles/centos7/mariadb/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="10" column="51" selection-start-line="10" selection-start-column="51" selection-end-line="10" selection-end-column="51" />
+        <state relative-caret-position="198">
+          <caret line="15" column="51" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dockerfiles/centos7/BuildCentOS.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="29" column="35" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
           <folding />
         </state>
       </provider>

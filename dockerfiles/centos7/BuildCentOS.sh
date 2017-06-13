@@ -20,3 +20,11 @@ docker run -ti --privileged=true -d --volumes-from data-mysql -p 3306:3306 -e MY
 # docker run -d -v /var/lib/mysql --name data-mysql --entrypoint /bin/echo shuimin/mysql:5.7
 # ./volume_restore.sh data-mysql
 # docker run -ti --privileged=true -d --volumes-from data-mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root shuimin/mysql:5.7
+
+cd ../../project/pond
+
+docker build -t shuimin/pond:0.0.1 .
+
+cd ../wms
+
+docker build -t shuimin/wms:0.0.1 .
