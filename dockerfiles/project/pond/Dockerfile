@@ -1,4 +1,4 @@
-FROM shuimin/mysql:5.7
+FROM shuimin/centos:7.3
 MAINTAINER Kevin,S.Q.B <409747494@qq.com>
 
 RUN mkdir /opt/workspace \
