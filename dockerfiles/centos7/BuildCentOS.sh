@@ -25,6 +25,10 @@ cd ../../project/pond
 
 docker build -t shuimin/pond:0.0.1 .
 
+docker run -ti --privileged=true -d -p 2223:22 shuimin/pond:0.0.1
+
 cd ../wms
 
 docker build -t shuimin/wms:0.0.1 .
+
+docker run -ti --privileged=true -d -p 2224:22 -p 5584:5584 shuimin/pond:0.0.1
