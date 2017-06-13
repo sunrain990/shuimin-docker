@@ -1,4 +1,4 @@
-FROM shuimin/centos:7.3
+FROM shuimin/mysql:5.7
 
 
 RUN mkdir /workspace \
