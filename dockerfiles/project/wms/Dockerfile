@@ -10,6 +10,9 @@ RUN chmod 600 /root/.ssh/id_rsa\
 
 ADD ./cp.conf /workspace/shuimin-wms/src/main/resources/cp.conf
 ADD ./dev.sh /workspace/shuimin-wms/dev.sh
+ADD ./wms.sql /workspace/shuimin-wms/wms.sql
+
+RUN mysql --user="root" --password="root" --execute="CREATE DATABASE shuimin_wms;use shuimin_wms; source /workspace/shuimin-wms/wms.sql"
 
 #chmod 600 /root/.ssh/id_rsa\
 #&& git clone git@git.oschina.net:kevinsqb/docker-test.git /workspace/docker-test
