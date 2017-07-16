@@ -34,7 +34,7 @@ WORKDIR /opt/workspace/shuimin-wms
 
 
 EXPOSE 5584
-CMD ["/bin/bash", "dev.sh"]
+CMD ["/bin/bash", "/opt/workspace/shuimin-wms/dev.sh"]
 
 #CMD ["/usr/sbin/init"]
 
