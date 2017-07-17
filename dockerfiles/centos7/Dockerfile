@@ -28,11 +28,11 @@ rm -f /lib/systemd/system/anaconda.target.wants/*;
 # sshd && tools
 RUN yum -y install openssh-server passwd; yum clean all; yum -y install wget tar git mariadb
 ADD ./ssh/start.sh /start.sh
-RUN mkdir /var/run/sshd;\
-&&ssh-keygen -t rsa -f /etc/ssh/ssh_host_rsa_key -N '';\
-&&chmod 755 /start.sh;\
-&&./start.sh;\
-&&systemctl enable sshd;
+RUN mkdir /var/run/sshd\
+&&ssh-keygen -t rsa -f /etc/ssh/ssh_host_rsa_key -N ''\
+&&chmod 755 /start.sh\
+&&./start.sh\
+&&systemctl enable sshd
 
 # jdk
 RUN wget http://www.oracle.com/technetwork/java/javase/downloads/index.html -O ./index.html &&  cat index.html| grep -Eoi '/technetwork/java/javase/downloads/jdk8-downloads-[0-9]+.html'| (head -n 1) | awk '{print "http://www.oracle.com"$1}'| xargs wget --no-cookies --header "Cookie: gpw_e24=xxx; oraclelicense=accept-securebackup-cookie;" -O index.html -q&& grep -Eoi '"filepath":"[^"]+jdk-8u[0-9]+-linux-x64.rpm"' index.html |grep -Eoi 'http:[^"]+'|xargs wget --no-cookies --header "Cookie: gpw_e24=xxx; oraclelicense=accept-securebackup-cookie;" -O ./jdk8.rpm && rpm -i ./jdk8.rpm;
