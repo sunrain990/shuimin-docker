@@ -31,6 +31,7 @@ ADD ./ssh/start.sh /start.sh
 RUN mkdir /var/run/sshd\
 &&ssh-keygen -t rsa -f /etc/ssh/ssh_host_rsa_key -N ''\
 &&chmod 755 /start.sh\
+&&sleep 1\
 &&./start.sh\
 &&systemctl enable sshd
 
