@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-#set -e
+set -e
 docker network create --subnet=172.18.0.0/16 shadownet
 docker build -t shuimin/centos:7.3 .
 docker run -ti --restart=always --privileged=true -d --network=shadownet --ip=172.18.0.4 -p 2222:22 shuimin/centos:7.3
