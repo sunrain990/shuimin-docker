@@ -31,17 +31,17 @@ ADD ./cp.conf /opt/workspace/shuimin-wms/src/main/resources/cp.conf
 
 WORKDIR /opt/workspace/shuimin-wms
 
-RUN sleep 3 \
+RUN sleep 5 \
 && echo "hello world0"\
-&&sync\
-&& echo "hello world"
-#\
-#&& mysql -h172.18.0.5 -P3306 -uroot -proot --execute="CREATE DATABASE if not exists shuimin_wms;use shuimin_wms;source /opt/workspace/shuimin-wms/wms.sql;"
+&& sync\
+&& echo "hello world1"\
+&& mysql -h172.18.0.5 -P3306 -uroot -proot --execute="CREATE DATABASE if not exists shuimin_wms;use shuimin_wms;source /opt/workspace/shuimin-wms/wms.sql;"\
+&& echo "hello world1"
 
 
-#EXPOSE 5584
-#CMD ["/bin/bash", "/opt/workspace/shuimin-wms/dev.sh"]
+EXPOSE 5584
+CMD ["/bin/bash", "/opt/workspace/shuimin-wms/dev.sh"]
 
-CMD ["/usr/sbin/init"]
+#CMD ["/usr/sbin/init"]
 
 
