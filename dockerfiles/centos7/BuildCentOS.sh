@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -e
 docker build -t shuimin/centos:7.3 .
-docker run -ti --privileged=true -d -p 2222:22 shuimin/centos:7.3
+docker run -ti --privileged=true -d -p 172.16.0.4:2222:22 shuimin/centos:7.3
 
 cd mariadb
 
@@ -10,7 +10,7 @@ cd mariadb
 
 docker build -t shuimin/mysql:5.7 .
 docker run -d -v /var/lib/mysql --name data-mysql --entrypoint /bin/echo shuimin/mysql:5.7
-docker run -ti --privileged=true -d --volumes-from data-mysql -p 3307:3307 -e MYSQL_ROOT_PASSWORD=root shuimin/mysql:5.7
+docker run -ti --privileged=true -d --volumes-from data-mysql -p 172.16.0.5:3307:3307 -e MYSQL_ROOT_PASSWORD=root shuimin/mysql:5.7
 
 #docker run -ti --privileged=true -d -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root shuimin/mysql:5.5
 
@@ -25,10 +25,10 @@ cd ../../project/pond
 
 docker build -t shuimin/pond:0.0.1 .
 
-docker run -ti --privileged=true -d -p 2223:22 shuimin/pond:0.0.1
+docker run -ti --privileged=true -d -p 172.16.0.6:2223:22 shuimin/pond:0.0.1
 
 cd ../wms
 
 docker build -t shuimin/wms:0.0.1 .
 
-docker run -ti --privileged=true -d -p 2224:22 -p 5584:5584 shuimin/wms:0.0.1
+docker run -ti --privileged=true -d -p 172.16.0.7:2224:22 -p 172.16.0.7:5584:5584 shuimin/wms:0.0.1
