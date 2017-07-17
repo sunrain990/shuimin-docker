@@ -13,8 +13,7 @@ ADD ./dev.sh /opt/workspace/shuimin-wms/dev.sh
 ADD ./wms.sql /opt/workspace/shuimin-wms/wms.sql
 ADD ./cp.conf /opt/workspace/shuimin-wms/src/main/resources/cp.conf
 
-#RUN sleep 3 \
-#&& mysql -h172.18.0.5 -P3306 -uroot -proot --execute="CREATE DATABASE if not exists shuimin_wms;use shuimin_wms;source /opt/workspace/shuimin-wms/wms.sql;"
+
 
 #chmod 600 /root/.ssh/id_rsa\
 #&& git clone git@git.oschina.net:kevinsqb/docker-test.git /workspace/docker-test
@@ -32,10 +31,14 @@ ADD ./cp.conf /opt/workspace/shuimin-wms/src/main/resources/cp.conf
 
 WORKDIR /opt/workspace/shuimin-wms
 
+RUN sleep 3 \
+&& echo "hello world"\
+&& mysql -h172.18.0.5 -P3306 -uroot -proot --execute="CREATE DATABASE if not exists shuimin_wms;use shuimin_wms;source /opt/workspace/shuimin-wms/wms.sql;"
 
-EXPOSE 5584
-CMD ["/bin/bash", "/opt/workspace/shuimin-wms/dev.sh"]
 
-#CMD ["/usr/sbin/init"]
+#EXPOSE 5584
+#CMD ["/bin/bash", "/opt/workspace/shuimin-wms/dev.sh"]
+
+CMD ["/usr/sbin/init"]
 
 
