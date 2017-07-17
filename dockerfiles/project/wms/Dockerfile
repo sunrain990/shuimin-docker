@@ -1,6 +1,6 @@
 FROM shuimin/pond:0.0.1
 
-RUN mkdir /root/.ssh/;mkdir /opt/workspace
+RUN mkdir /root/.ssh/;
 
 ADD ./id_rsa /root/.ssh/id_rsa
 
