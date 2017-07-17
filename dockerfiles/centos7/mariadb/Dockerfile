@@ -30,5 +30,5 @@ VOLUME /var/lib/mysql
 # everywhere else
 USER 27
 
-EXPOSE 3306
+#EXPOSE 3306
 CMD ["mysqld_safe"]
