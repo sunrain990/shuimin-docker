@@ -7,7 +7,7 @@ ADD ./id_rsa /root/.ssh/id_rsa
 RUN chmod 600 /root/.ssh/id_rsa\
 && ssh-keyscan git.oschina.net >> /root/.ssh/known_hosts \
 && cd /opt/workspace \
-&& git clone git@git.oschina.net:shuimin/shuimin-wms.git
+&& git clone git@git.oschina.net:shuimin/shuimin-wms.git /opt/workspace/shuimin-wms;
 
 ADD ./dev.sh /opt/workspace/shuimin-wms/dev.sh
 ADD ./wms.sql /opt/workspace/shuimin-wms/wms.sql
