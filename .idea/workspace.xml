@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="59af5fd1-c15d-4fb8-8606-d1a22a11adca" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dockerfiles/centos7/BuildCentOS.sh" afterPath="$PROJECT_DIR$/dockerfiles/centos7/BuildCentOS.sh" />
     </list>
     <ignored path="shuimin-docker.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -88,8 +89,8 @@
       <file leaf-file-name="BuildCentOS.sh" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dockerfiles/centos7/BuildCentOS.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+            <state relative-caret-position="195">
+              <caret line="13" column="127" selection-start-line="13" selection-start-column="127" selection-end-line="13" selection-end-column="127" />
               <folding />
             </state>
           </provider>
@@ -153,8 +154,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="562" />
-    <option name="y" value="119" />
+    <option name="x" value="313" />
+    <option name="y" value="165" />
     <option name="width" value="1420" />
     <option name="height" value="888" />
   </component>
@@ -408,15 +409,15 @@
       <updated>1494522623604</updated>
       <workItem from="1494522625451" duration="106464000" />
       <workItem from="1496826410711" duration="44648000" />
-      <workItem from="1500193488028" duration="14454000" />
+      <workItem from="1500193488028" duration="14932000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="165566000" />
+    <option name="totallyTimeSpent" value="166044000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="562" y="119" width="1420" height="888" extended-state="0" />
+    <frame x="313" y="165" width="1420" height="888" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11651179" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -862,8 +863,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dockerfiles/centos7/BuildCentOS.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+        <state relative-caret-position="195">
+          <caret line="13" column="127" selection-start-line="13" selection-start-column="127" selection-end-line="13" selection-end-column="127" />
           <folding />
         </state>
       </provider>
