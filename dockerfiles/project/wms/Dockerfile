@@ -32,8 +32,11 @@ ADD ./cp.conf /opt/workspace/shuimin-wms/src/main/resources/cp.conf
 WORKDIR /opt/workspace/shuimin-wms
 
 RUN sleep 3 \
-&& echo "hello world"\
-&& mysql -h172.18.0.5 -P3306 -uroot -proot --execute="CREATE DATABASE if not exists shuimin_wms;use shuimin_wms;source /opt/workspace/shuimin-wms/wms.sql;"
+&& echo "hello world0"\
+&&sync\
+&& echo "hello world"
+#\
+#&& mysql -h172.18.0.5 -P3306 -uroot -proot --execute="CREATE DATABASE if not exists shuimin_wms;use shuimin_wms;source /opt/workspace/shuimin-wms/wms.sql;"
 
 
 #EXPOSE 5584
