@@ -28,6 +28,8 @@ docker build -t shuimin/pond:0.0.1 .
 
 docker run -ti --restart=always --privileged=true -d --network=shadownet --ip=172.18.0.6 -p 2223:22 shuimin/pond:0.0.1
 
+sleep 3 && sync
+
 cd ../wms
 
 docker build -t shuimin/wms:0.0.1 .

@@ -12,6 +12,7 @@ RUN chmod 600 /root/.ssh/id_rsa\
 ADD ./dev.sh /opt/workspace/shuimin-wms/dev.sh
 ADD ./wms.sql /opt/workspace/shuimin-wms/wms.sql
 ADD ./cp.conf /opt/workspace/shuimin-wms/src/main/resources/cp.conf
+ADD ./initdb.sh /opt/workspace/shuimin-wms/initdb.sh
 
 
 
@@ -31,12 +32,9 @@ ADD ./cp.conf /opt/workspace/shuimin-wms/src/main/resources/cp.conf
 
 WORKDIR /opt/workspace/shuimin-wms
 
-RUN sleep 5 \
-&& echo "hello world0"\
-&& sync\
-&& echo "hello world1"\
-&& mysql -h172.18.0.5 -P3306 -uroot -proot --execute="CREATE DATABASE if not exists shuimin_wms;use shuimin_wms;source /opt/workspace/shuimin-wms/wms.sql;"\
-&& echo "hello world1"
+RUN echo 'hello world'\
+&&/opt/workspace/shuimin-wms/initdb.sh\
+&&echo 'hello world'
 
 
 EXPOSE 5584
