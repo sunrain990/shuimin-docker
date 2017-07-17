@@ -10,7 +10,7 @@ cd mariadb
 
 docker build -t shuimin/mysql:5.7 .
 docker run -d -v /var/lib/mysql --name data-mysql --entrypoint /bin/echo shuimin/mysql:5.7
-docker run -ti --privileged=true -d --volumes-from data-mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root shuimin/mysql:5.7
+docker run -ti --privileged=true -d --volumes-from data-mysql -p 3307:3307 -e MYSQL_ROOT_PASSWORD=root shuimin/mysql:5.7
 
 #docker run -ti --privileged=true -d -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root shuimin/mysql:5.5
 
