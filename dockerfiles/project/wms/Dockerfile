@@ -31,11 +31,10 @@ ADD ./initdb.sh /opt/workspace/shuimin-wms/initdb.sh
 #RUN git clone git@git.oschina.net:kevinsqb/docker-test.git /workspace/shuimin-wms;\
 
 WORKDIR /opt/workspace/shuimin-wms
-
-RUN echo 'hello world'\
-&&/opt/workspace/shuimin-wms/initdb.sh\
-&&echo 'hello world'
-
+#
+#RUN echo 'hello world'\
+#&&/opt/workspace/shuimin-wms/initdb.sh\
+#&&echo 'hello world'
 
 EXPOSE 5584
 CMD ["/bin/bash", "/opt/workspace/shuimin-wms/dev.sh"]
