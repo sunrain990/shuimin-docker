@@ -44,7 +44,7 @@ docker run -ti --restart=always --privileged=true -d --volumes-from data-mysql -
 #sleep 3 && sync
 
 
-cd ../plugins
+cd ../../project/plugins
 
 docker build -t shuimin/plugins:0.0.1 .
 

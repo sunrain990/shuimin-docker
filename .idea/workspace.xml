@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="59af5fd1-c15d-4fb8-8606-d1a22a11adca" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dockerfiles/centos7/BuildCentOS.sh" afterPath="$PROJECT_DIR$/dockerfiles/centos7/BuildCentOS.sh" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dockerfiles/project/plugins/Dockerfile" afterPath="$PROJECT_DIR$/dockerfiles/project/plugins/Dockerfile" />
     </list>
     <ignored path="shuimin-docker.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,11 +35,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Dockerfile" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Dockerfile" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dockerfiles/project/wms/Dockerfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-291">
-              <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+            <state relative-caret-position="144">
+              <caret line="31" column="34" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -60,7 +59,7 @@
         <entry file="file://$PROJECT_DIR$/dockerfiles/project/plugins/Dockerfile">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="195">
-              <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -96,11 +95,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BuildCentOS.sh" pinned="false" current-in-tab="false">
+      <file leaf-file-name="BuildCentOS.sh" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dockerfiles/centos7/BuildCentOS.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="177">
-              <caret line="46" column="13" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
+            <state relative-caret-position="312">
+              <caret line="46" column="24" selection-start-line="46" selection-start-column="24" selection-end-line="46" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -166,8 +165,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="229" />
-    <option name="y" value="287" />
+    <option name="x" value="387" />
+    <option name="y" value="228" />
     <option name="width" value="1327" />
     <option name="height" value="747" />
   </component>
@@ -505,15 +504,15 @@
       <updated>1494522623604</updated>
       <workItem from="1494522625451" duration="106464000" />
       <workItem from="1496826410711" duration="44648000" />
-      <workItem from="1500193488028" duration="29633000" />
+      <workItem from="1500193488028" duration="29817000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="180745000" />
+    <option name="totallyTimeSpent" value="180929000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="229" y="287" width="1327" height="747" extended-state="0" />
+    <frame x="387" y="228" width="1327" height="747" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12480857" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -933,10 +932,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dockerfiles/project/plugins/Dockerfile">
+    <entry file="file://$PROJECT_DIR$/dockerfiles/project/wms/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+        <state relative-caret-position="144">
+          <caret line="31" column="34" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
           <folding />
         </state>
       </provider>
@@ -949,18 +948,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dockerfiles/centos7/BuildCentOS.sh">
+    <entry file="file://$PROJECT_DIR$/dockerfiles/project/plugins/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="46" column="13" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
+        <state relative-caret-position="195">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dockerfiles/project/wms/Dockerfile">
+    <entry file="file://$PROJECT_DIR$/dockerfiles/centos7/BuildCentOS.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-291">
-          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+        <state relative-caret-position="312">
+          <caret line="46" column="24" selection-start-line="46" selection-start-column="24" selection-end-line="46" selection-end-column="24" />
           <folding />
         </state>
       </provider>
