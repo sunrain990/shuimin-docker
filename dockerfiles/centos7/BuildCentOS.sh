@@ -48,7 +48,7 @@ cd ../plugins
 
 docker build -t shuimin/plugins:0.0.1 .
 
-docker run -ti --restart=always --privileged=true -d --network=shadownet --ip=172.18.0.8 --name=shuimin_wms -p 2225:22 -p 5584:5584 shuimin/plugins:0.0.1
+docker run -ti --restart=always --privileged=true -d --network=shadownet --ip=172.18.0.8 --name=shuimin_plugins -p 2225:22 shuimin/plugins:0.0.1
 
 cd ../wms
 

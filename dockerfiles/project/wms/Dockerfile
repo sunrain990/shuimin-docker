@@ -1,4 +1,4 @@
-FROM shuimin/pond:0.0.1
+FROM shuimin/plugins:0.0.1
 
 RUN mkdir /root/.ssh/;
 
