@@ -29,13 +29,26 @@ docker run -ti --restart=always --privileged=true -d --volumes-from data-mysql -
 ## Restore
 #cat backup.sql | docker exec -i CONTAINER /usr/bin/mysql -u root --password=root DATABASE
 
+#cd ../nginx
+#
+#docker build -t shuimin/nginx:1.8 .
+#docker run -ti --restart=always --privileged=true -d --network=shadownet --ip=172.18.0.6  --name=shuimin_pond -p 2223:22 shuimin/nginx:1.8
+
+
 cd ../../project/pond
 
 docker build -t shuimin/pond:0.0.1 .
 
-docker run -ti --restart=always --privileged=true -d --network=shadownet --ip=172.18.0.6  --name=shuimin_pond -p 2223:22 shuimin/pond:0.0.1
+docker run -ti --restart=always --privileged=true -d --network=shadownet --ip=172.18.0.7  --name=shuimin_pond -p 2224:22 shuimin/pond:0.0.1
 
 sleep 3 && sync
+
+
+cd ../plugins
+
+docker build -t shuimin/plugins:0.0.1 .
+
+docker run -ti --restart=always --privileged=true -d --network=shadownet --ip=172.18.0.8 --name=shuimin_wms -p 2225:22 -p 5584:5584 shuimin/plugins:0.0.1
 
 cd ../wms
 
@@ -47,4 +60,4 @@ echo "heiweigo2"
 
 docker build -t shuimin/wms:0.0.1 .
 
-docker run -ti --restart=always --privileged=true -d --network=shadownet --ip=172.18.0.7 --name=shuimin_wms -p 2224:22 -p 5584:5584 shuimin/wms:0.0.1
+docker run -ti --restart=always --privileged=true -d --network=shadownet --ip=172.18.0.9 --name=shuimin_wms -p 2226:22 -p 5584:5584 shuimin/wms:0.0.1
