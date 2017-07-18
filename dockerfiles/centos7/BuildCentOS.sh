@@ -35,13 +35,13 @@ docker run -ti --restart=always --privileged=true -d --volumes-from data-mysql -
 #docker run -ti --restart=always --privileged=true -d --network=shadownet --ip=172.18.0.6  --name=shuimin_pond -p 2223:22 shuimin/nginx:1.8
 
 
-cd ../../project/pond
-
-docker build -t shuimin/pond:0.0.1 .
-
-docker run -ti --restart=always --privileged=true -d --network=shadownet --ip=172.18.0.7  --name=shuimin_pond -p 2224:22 shuimin/pond:0.0.1
-
-sleep 3 && sync
+#cd ../../project/pond
+#
+#docker build -t shuimin/pond:0.0.1 .
+#
+#docker run -ti --restart=always --privileged=true -d --network=shadownet --ip=172.18.0.7  --name=shuimin_pond -p 2224:22 shuimin/pond:0.0.1
+#
+#sleep 3 && sync
 
 
 cd ../plugins
